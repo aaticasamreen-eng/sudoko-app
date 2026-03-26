@@ -6,6 +6,8 @@ import svgr from "vite-plugin-svgr";
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: "/sudoko-app/",
+
   plugins: [
     react(),
     miaodaDevPlugin(),
@@ -17,6 +19,7 @@ export default defineConfig({
       },
     }),
   ],
+
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
